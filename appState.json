@@ -1,0 +1,79 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "82a071ba-1d18-4c2b-9f6e-4b36462e1342": {
+        "id": "82a071ba-1d18-4c2b-9f6e-4b36462e1342",
+        "parent": null,
+        "name": "layers_lambda",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "04422019-e537-4f0a-9c30-1f821181d006"
+        ],
+        "isRemovable": false,
+        "filePath": "layers_lambda"
+      },
+      "04422019-e537-4f0a-9c30-1f821181d006": {
+        "id": "04422019-e537-4f0a-9c30-1f821181d006",
+        "parent": "82a071ba-1d18-4c2b-9f6e-4b36462e1342",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "layers_lambda/lambda.js",
+        "code": "let udith_layer = require('opt/sample-layer-udith:5');\n\nexports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [
+            "arn:aws:lambda:us-east-1:318300609668:layer:sample-layer-udith:5"
+          ]
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "82a071ba-1d18-4c2b-9f6e-4b36462e1342",
+    "openFiles": [
+      "04422019-e537-4f0a-9c30-1f821181d006"
+    ],
+    "currentFileId": "04422019-e537-4f0a-9c30-1f821181d006",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "layers_lambda",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1549861458497
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "layers_lambda",
+      "url": "https://github.com/TestAndunR/layers_lambda"
+    }
+  }
+}
